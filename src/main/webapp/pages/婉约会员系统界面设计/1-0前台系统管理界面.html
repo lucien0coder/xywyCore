@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>婉约前台系统</title>
+  <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">夕阳婉约</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item">
+    		<div class="layui-input-inline">
+    			<input type="text" name="search" autocomplete="off" class="layui-input" placeholder="输入搜索内容...">
+    		</div>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          贤心
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">密码重置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item"><a href="">我的会员列表</a></li>
+        <li class="layui-nav-item"><a href="">添加新会员</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <table class="layui-table">
+      <colgroup>
+        <col width="150">
+        <col width="200">
+        <col width="150">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>昵称</th>
+          <th>婉约会员号</th>
+          <th>姓名</th>
+          <th>会员卡类型</th>
+          <th>操作</th>
+        </tr> 
+      </thead>
+      <tbody>
+        <tr>
+          <td>贤心</td>
+          <td>2016112900</td>
+          <td>张小娴</td>
+          <td>个人卡</td>
+          <td><a href="" class="layui-bg-blue">挂失</a>&nbsp;&nbsp;<a href="">详情</a></td>
+        </tr>
+        <tr>
+          <td>许闲心</td>
+          <td>2016112800</td>
+          <td>于千</td>
+          <td>个人卡</td>
+          <td><a href="" class="layui-bg-red">激活</a>&nbsp;&nbsp;<a href="">详情</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © 夕阳婉约
+  </div>
+</div>
+<script src="layui/layui.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>
